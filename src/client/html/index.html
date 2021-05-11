@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fun Game Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div id="container">
+        <canvas id="game-canvas"></canvas>
+        <div id="leaderboard" class="hidden">
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="play-menu" class="hidden">
+        <div id="header">
+            <img src="https://i.ibb.co/BnfG1Lp/Header.png" alt="shooter-header" id="shooter">
+        </div>
+
+        <div class="columns" id="left">
+            <input id="username-input" name="guestName" placeholder="Guest Username" type="text"><br>
+            <input id="play-button" name="guestSubmit" value="Join Game" type="button"><br>
+
+            <input id="accountName" name="accountName" placeholder="Username" type="text"><br>
+            <input id="accountPass" name="accountPass" placeholder="Password" type="text"><br>
+            <input id="login" name="login" value="Login" type="button"><br>
+            <input id="createAcct" name="createAcct" value="Create Account" type="button"><br>
+        </div>
+    </div>
+    <div id="disconnect-modal" class="hidden">
+        <div>
+            <h2>Disconnected from Server</h2>
+            <hr/>
+            <button id="reconnect-button">RECONNECT</button>
+        </div>
+    </div>
+</body>
+
+</html>

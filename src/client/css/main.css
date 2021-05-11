@@ -1,0 +1,329 @@
+/* ---------- Containers ---------- */
+
+div#play-menu {
+    border: 4px solid black;
+    border-radius: 14px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1280px;
+    height: 720px;
+}
+
+div#header {
+    margin: 20px auto;
+    margin-bottom: 10px;
+    width: 776px;
+    height: 220px;
+    text-align: center;
+}
+
+div#header p {
+    font-family: bubblegum;
+    text-align: center;
+    margin: 46px auto;
+    font-size: 120px;
+    color: #2980B9;
+}
+
+div.columns {
+    float: left;
+}
+
+div#left {
+    margin-left: 450px;
+    width: 381px;
+    height: 442px;
+    text-align: center;
+}
+
+div#right {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 381px;
+    height: 442px;
+}
+
+div#customization {
+    background-color: lightgray;
+    border: 4px solid black;
+    border-radius: 14px;
+    width: 75%;
+    height: 346px;
+    margin: 0px auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+div#play-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ---------- Miscellaneous ---------- */
+
+@font-face {
+  font-family: bubblegum;
+  src: url(/assets/Bubblegum.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background-color: lightblue;
+}
+
+* {
+    font-family: bubblegum;
+}
+
+/* ---------- Form Items ---------- */
+
+input#username-input {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 40px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+}
+
+input#play-button {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #1ABC9C;
+    color: black;
+    font-size: 16px;
+}
+
+input#play-button:hover {
+    background-color: #148F77;
+    cursor: pointer;
+}
+
+input#accountName {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 40px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+}
+
+input#accountPass {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+}
+
+input#login {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #F1C40F;
+    color: black;
+    font-size: 16px;
+}
+
+input#login:hover {
+    background-color: #B7950B;
+    cursor: pointer;
+}
+
+input#logout {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #F1C40F;
+    color: black;
+    font-size: 16px;
+}
+
+input#logout:hover {
+    background-color: #B7950B;
+    cursor: pointer;
+}
+
+input#createAcct {
+    display: inline-block;
+    width: 75%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 4px solid black;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #EC7063;
+    color: black;
+    font-size: 16px;
+}
+
+input#createAcct:hover {
+    background-color: #CB4335;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+ul#colorList {
+    list-style-type: none;
+}
+
+ul#colorList li.colorOption {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 4px solid black;
+}
+
+ul#colorList li.colorOption:hover {
+    transform: scale(1.05);
+}
+
+#blue {
+    background-color: #1980A6;
+}
+
+#green {
+    background-color: #1ABC9C;
+}
+
+#yellow {
+    background-color: #F1C40F;
+}
+
+#red {
+    background-color: #EC7063;
+}
+
+p#pickClass {
+    margin-top: 180px;
+    padding: 0px;
+}
+
+select#classes {
+    width: 75%;
+    height: 48px;
+    text-align-last: center;
+    border: 4px solid black;
+    border-radius: 14px;
+    font-size: 16px;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+select#classes:hover {
+    transform: scale(1.05);
+}
+
+/* ----- Extra ----- */
+
+.hidden {
+    display: none !important;
+}
+
+#container {
+    position: fixed;
+    width: 1288px;
+    height: 728px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+canvas#game-canvas {
+    border: 4px solid black;
+    border-radius: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#leaderboard {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(150, 150, 150, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#leaderboard th {
+  text-align: center;
+  padding: 2px 5px;
+}
+
+#leaderboard td {
+  text-align: center;
+  padding: 2px 5px;
+}
+
+#disconnect-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#disconnect-modal > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
